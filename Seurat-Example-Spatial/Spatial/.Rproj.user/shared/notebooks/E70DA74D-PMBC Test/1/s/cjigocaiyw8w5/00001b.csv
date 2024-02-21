@@ -1,0 +1,4 @@
+"0",""
+"0","library(ggplot2)"
+"0","plot <- DimPlot(pbmc, reduction = ""umap"", label = TRUE, label.size = 4.5) + xlab(""UMAP 1"") + ylab(""UMAP 2"") +"
+"0","    theme(axis.title = element_text(size = 18), legend.text = element_text(size = 18)) + guides(colour = guide_legend(override.aes = list(size = 10)))"

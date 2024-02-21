@@ -1,0 +1,4 @@
+"0","ifnb$celltype.stim <- paste(ifnb$seurat_annotations, ifnb$stim, sep = ""_"")"
+"0","Idents(ifnb) <- ""celltype.stim"""
+"0","b.interferon.response <- FindMarkers(ifnb, ident.1 = ""B_STIM"", ident.2 = ""B_CTRL"", verbose = FALSE)"
+"0","head(b.interferon.response, n = 15)"

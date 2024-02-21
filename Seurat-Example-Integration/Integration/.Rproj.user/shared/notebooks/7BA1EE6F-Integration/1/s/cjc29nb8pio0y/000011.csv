@@ -1,0 +1,10 @@
+"0","Idents(ifnb) <- ""seurat_annotations"""
+"0","nk.markers <- FindConservedMarkers(ifnb, ident.1 = ""NK"", grouping.var = ""stim"", verbose = FALSE)"
+"2","Error: Please install the metap package to use FindConservedMarkers.
+This can be accomplished with the following commands: 
+----------------------------------------
+install.packages('BiocManager')
+BiocManager::install('multtest')
+install.packages('metap')
+----------------------------------------
+"

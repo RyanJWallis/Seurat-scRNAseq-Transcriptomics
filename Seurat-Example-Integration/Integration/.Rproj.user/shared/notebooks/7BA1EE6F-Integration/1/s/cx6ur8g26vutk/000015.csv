@@ -1,0 +1,190 @@
+"0",""
+"0","library(Seurat)"
+"2","Loading required package: SeuratObject
+"
+"2","Loading required package: sp
+"
+"2","‘SeuratObject’ was built under R 4.2.0 but the current version is 4.2.1; it is recomended that you reinstall
+‘SeuratObject’ as the ABI for R may have changed
+"
+"2","
+Attaching package: ‘SeuratObject’
+
+"
+"2","The following object is masked from ‘package:base’:
+
+    intersect
+
+"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"2","Registered S3 method overwritten by 'htmlwidgets':
+  method           from         
+  print.htmlwidget tools:rstudio
+"
+"0","library(SeuratData)"
+"2","── [1mInstalled datasets[22m ───────────────────────────────────────────────────────────────────────────────────────── SeuratData v0.2.2.9001 ──
+"
+"2","[32m✔[39m [34mifnb[39m 3.0.0                                                        
+
+"
+"2","────────────────────────────────────────────────────────────────── Key ──────────────────────────────────────────────────────────────────
+"
+"2","[32m✔[39m Dataset loaded successfully
+[33m❯[39m Dataset built with a newer version of Seurat than installed
+[31m❓[39m Unknown version of Seurat installed
+
+"
+"0","library(patchwork)"
+"0","install.packages(""https://seurat.nygenome.org/src/contrib/ifnb.SeuratData_3.0.0.tar.gz"", repos = NULL, type = ""source"")"
+"2","trying URL 'https://seurat.nygenome.org/src/contrib/ifnb.SeuratData_3.0.0.tar.gz'
+"
+"2","Content type 'application/octet-stream'"
+"2"," length 20378274 bytes (19.4 MB)
+"
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","="
+"2","
+"
+"2","downloaded 19.4 MB
+
+"
+"2","* installing *source* package ‘ifnb.SeuratData’ ...
+"
+"2","** using staged installation
+"
+"2","** R
+"
+"2","** data
+"
+"2","*** moving datasets to lazyload DB
+"
+"2","** inst
+"
+"2","** byte-compile and prepare package for lazy loading
+"
+"2","** help
+"
+"2","*** installing help indices
+"
+"2","** building package indices
+"
+"2","** testing if installed package can be loaded from temporary location
+"
+"2","** testing if installed package can be loaded from final location
+"
+"2","** testing if installed package keeps a record of temporary installation path
+"
+"2","* DONE (ifnb.SeuratData)
+"
+"0","# load dataset"
+"0","ifnb <- LoadData(""ifnb"")"
+"2","Validating object structure
+"
+"2","Updating object slots
+"
+"2","Ensuring keys are in the proper structure
+"
+"2","Warning: Assay RNA changing from Assay to Assay"
+"2","Ensuring keys are in the proper structure
+"
+"2","Ensuring feature names don't have underscores or pipes
+"
+"2","Updating slots in RNA
+"
+"2","Validating object structure for Assay ‘RNA’
+"
+"2","Object representation is consistent with the most current Seurat version
+"
+"2","Warning: Assay RNA changing from Assay to Assay5"
+"0","# split the RNA measurements into two layers one for control cells, one for stimulated cells"
+"0",""
+"0","ifnb[[""RNA""]] <- split(ifnb[[""RNA""]], f = ifnb$stim)"
+"0","ifnb"
+"1","An object of class"
+"1"," "
+"1","Seurat"
+"1"," "
+"1","
+"
+"1","14053"
+"1"," "
+"1","features across"
+"1"," "
+"1","13999"
+"1"," "
+"1","samples within"
+"1"," "
+"1","1"
+"1"," "
+"1","assay"
+"1"," "
+"1","
+"
+"1","Active assay:"
+"1"," "
+"1","RNA"
+"1"," "
+"1","(14053 features, 0 variable features)"
+"1","
+"
+"1"," "
+"1","4"
+"1"," "
+"1","layers"
+"1"," "
+"1","present:"
+"1"," "
+"1","counts.CTRL, counts.STIM, data.CTRL, data.STIM"
+"1","
+"

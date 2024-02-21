@@ -1,0 +1,8 @@
+"0",""
+"0","pbmc.markers %>%"
+"0","    group_by(cluster) %>%"
+"0","    dplyr::filter(avg_log2FC > 1) %>%"
+"0","    slice_head(n = 10) %>%"
+"0","    ungroup() -> top10"
+"0","DoHeatmap(pbmc, features = top10$gene) + NoLegend()"
+"0",""

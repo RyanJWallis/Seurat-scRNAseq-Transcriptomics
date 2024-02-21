@@ -1,0 +1,6 @@
+"0","# The [[ operator can add columns to object metadata. This is a great place to stash QC stats"
+"0","pbmc[[""percent.mt""]] <- PercentageFeatureSet(pbmc, pattern = ""^MT-"")"
+"0",""
+"0","# Visualize QC metrics as a violin plot"
+"0","VlnPlot(pbmc, features = c(""nFeature_RNA"", ""nCount_RNA"", ""percent.mt""), ncol = 3)"
+"2","Warning: Default search for ""data"" layer in ""RNA"" assay yielded no results; utilizing ""counts"" layer instead."

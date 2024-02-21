@@ -1,0 +1,2 @@
+"0","FeaturePlot(ifnb, features = c(""CD3D"", ""GNLY"", ""IFI6""), split.by = ""stim"", max.cutoff = 3, cols = c(""grey"","
+"0","    ""red""), reduction = ""umap"")"
