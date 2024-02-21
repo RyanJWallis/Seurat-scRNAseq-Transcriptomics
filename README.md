@@ -27,4 +27,4 @@ Explored integration techniques in Seurat using data from human PBMCs from two c
 - Identified cell clusters representing different types.
 - Visualized clusters and marker genes.
 - Detected differential gene expression.
-- - Integrated multiple datasets.
+- Integrated multiple datasets.
